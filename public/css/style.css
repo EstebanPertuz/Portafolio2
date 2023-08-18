@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+body {
+    background-color: #181717;
+    opacity: 0.9;
+    background-image: radial-gradient(#302e2eb7 0.9500000000000001px, #161515 0.9500000000000001px);
+    background-size: 19px 19px;
+}
+
+header {
+    padding: 1rem 4rem 0 4rem;
+}
+
+.rouded-icon {
+    background-color: #1f1c1c;
+    border-radius:  100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px ;
+    border: 1px solid  #42424241;
+}
+
+.wrapper-email {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1px solid #6161611e;
+    padding: 0.5rem 0;
+    align-items: center;
+    
+}
+
+.wrapper-links{
+    color: #616161;
+}
+.wrapper-links a {
+    text-decoration:none ;
+    color: #616161;
+}
+
+.photo-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+;
+
+}
+.photo-perfil img {
+    width: 150px;
+    height: 150px; 
+    border-radius: 100%;
+    border-bottom: 0.2px solid #61616150;
+}
+
+.name-presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    color: aliceblue;
+    
+
+}
+
+p {
+    background: -webkit-linear-gradient(rgb(34, 33, 33), rgb(255, 255, 255));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+.discharge{
+    padding: 2rem;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.discharge button{
+    display:flex;
+    gap: 0.7rem;
+    color: rgba(141, 236, 33, 0.555);
+}
+
+.discharge a{
+    text-decoration:none;
+    color: rgba(141, 236, 33, 0.555);
+}
+    
+button{
+    background-color: #1f1e1e;
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+
+.logo {
+    width: auto !important;
+    border-radius: 1px ;
+    height: 90px;
+}
+
+.container-logo  { 
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#181717 ;
+}
+
+.skills {
+    padding: 6rem;
+    font-size: larger;
+    display: flex;
+    text-align: center;
+}
+
+/* TODO: Habilidades */
+
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #302d2d;
+    border-radius: 15px;
+    background: #111111;
+}
+
+.carousel img {
+    width: 130px;
+    height: 130px;
+    display: block;
+}
+
+.arrow {
+    position: absolute;
+    top: 60px;
+    padding: 0;
+    background: #ddd4d4;
+    border-radius: 15px;
+    border: 1px solid gray;
+    font-size: 24px;
+    line-height: 24px;
+    color: #444;
+    display: block;
+}
+
+.arrow:focus {
+    outline: none;
+}
+
+.arrow:hover {
+    background: #ccc;
+    cursor: pointer;
+}
+
+.prev {
+    left: 7px;
+}
+
+.next {
+    right: 7px;
+}
+
+.gallery {
+    width: 390px;
+    overflow: hidden;
+}
+
+.gallery ul {
+    height: 130px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    font-size: 0;
+}
+
+.gallery li {
+    display: inline-block;
+}
+
+
+.Copyright{
+    font-size: small;
+    padding: 2rem;
+}
+
+.whatsapp a {
+    color: green; 
+    text-decoration:none;
+}
+
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-size: larger;
+}
+
+footer p {
+    font-size: larger;
+}

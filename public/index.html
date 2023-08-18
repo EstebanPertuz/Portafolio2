@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Geologica:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/css/img/maletin.png">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/push-down.css' rel='stylesheet'>
+    <link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="wrapper-email">
+                <div class="rouded-icon" ><i class="fa-solid fa-envelope" style="color: #616161;"></i>
+                </div>
+                <span  style="color: #616161;">esteban44b@gmail.com</span>
+            </div>
+    
+            <div class="wrapper-links">
+                <a href="https://github.com/EstebanPertuz" target="_blank">Github </a>
+                /
+                <a href="https://www.linkedin.com/in/esteban-pertuz-237455276/" target="_blank">Inlink</a>
+            </div>
+            
+        </nav>
+    </header>
+    <section>
+
+        <div class="photo-perfil">
+            <img src="/css/img/9c5f85041d91de188afa2c468fdaba1a.jpg" alt="">
+        </div>
+
+        <div class="name-presentation">
+            <h5 style="color: #616161;">Hola, soy Esteban 👋</h5> 
+        </div>
+
+        <p>
+            <strong>Desarrollador web Full Stack. 
+            </strong>
+        </p>
+
+        <p>Con experiencia en desarrollo<br>de diseño web y móviles
+        </p>
+
+        <div class="discharge">
+            
+            <button >
+                <a href="https://docs.google.com/document/d/1oiZmhPxPeQ3fkxRpUKV6WyF-x4NmA_VA/edit?usp=drive_link&ouid=112983133737785338145&rtpof=true&sd=true" target="_blank" download = >
+                    Descargar CV
+                </a><i class="gg-push-down"></i>
+            </button>
+
+        </div>
+    
+    </section>
+
+    <section>
+
+        <div class="container-logo">
+            <img class="logo" src="/css/img/logo_academlo_blanco.png" alt="academlo">
+        </div>
+    </section>
+
+    <section>
+
+            <p class="skills">
+
+                Estos son las habilidades que he aprendido y <br>he  utilizado por el momento ...
+            </p>
+
+            <!-- TODO: Carrusel -->
+    <div id="carousel" class="carousel">
+        <button class="arrow prev">⇦</button>
+        <div class="gallery">
+        <ul>
+            <li><img src="/css/img/html.png"></li>
+            <li><img src="/css/img/css3-logo-svg-vector.svg"></li>
+            <li><img src="/css/img/js-logo.webp"></li>
+            <li><img src="/css/img/React.png"></li>
+            <li><img src="/css/img/GitHub-logo.png"></li>
+            <li><img src="/css/img/nodejs-logo-FBE122E377-seeklogo.com.png"></li>
+
+        </ul>
+        </div>
+        <button class="arrow next">⇨</button>
+    </div>
+
+    <script>
+        /* etiqueta las imágenes pra poder rastrearlas, solo por conveniencia */
+        let i = 1;
+        for(let li of carousel.querySelectorAll('li')) {
+        li.style.position = 'relative';
+        li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
+        i++;
+        }
+        
+        /* configuración */
+        let width = 130; // ancho de las imágenes
+        let count = 3; // conteo de las imágenes visibles
+        
+        let list = carousel.querySelector('ul');
+        let listElems = carousel.querySelectorAll('li');
+        
+        let position = 0; // posición del desplazamiento del carrete
+        
+        carousel.querySelector('.prev').onclick = function() {
+          // desplazamiento izquierdo
+          position += width * count;
+          // no podemos mover demasiado a la izquierda, se acaban las imágenes
+        position = Math.min(position, 0)
+        list.style.marginLeft = position + 'px';
+        };
+        
+        carousel.querySelector('.next').onclick = function() {
+          // desplazamiento derecho
+          position -= width * count;
+          // solo se puede desplazar el carrete de imágenes (longitud total de la cinta - conteo visibles)
+          position = Math.max(position, -width * (listElems.length - count));
+        list.style.marginLeft = position + 'px';
+        };
+        </script>
+
+    </section>
+
+        <footer>
+            <div> 
+                <p class="Copyright">&copy; Todos los Derechos Reservados | Creado Por:  <NAME>Esteban Pertuz</p>
+                    <p>Contactame a</p>
+            </div>
+                <div >
+                <h2 class="whatsapp"> <a href="https://wa.me/573012165106?text=¡Hola!" target="_blank" </a>WhatsApp <i class="fa-brands fa-whatsapp"></i></h2>
+                </div>
+
+        </footer>
+
+    
+</body>
+</html>
